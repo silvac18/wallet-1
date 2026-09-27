@@ -1,0 +1,699 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.phone {
+    max-width: 270px;
+    height: 580px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+}
+
+
+/* ================= STATUS BAR ================= */
+
+.status-bar {
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 13px;
+    font-size: 11px;
+    font-weight: bold;
+    position: relative;
+    z-index: 10;
+}
+
+.status-bar div {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.status-bar i {
+    font-size: 9px;
+}
+
+.notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 20px;
+    background: #000;
+    border-radius: 0 0 18px 18px;
+}
+
+.app-container {
+    display: flex;
+    gap: 22px;
+    padding: 20px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.login-content {
+    padding: 14px 12px;
+}
+
+
+.hero-image{
+    img{
+        height: 150px;
+    }
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content{
+    padding: 12px;
+    text-align: center;
+}
+
+.hero-content h1{
+    font-size: 20px;
+    margin-top: -20px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.hero-content p{
+    font-size: 12px;
+    line-height: 12px;
+    color: #777;
+}
+
+.pay-bills{
+     padding: 14px;
+     text-align: center;
+}
+
+.pay-bills h1{
+    font-size: 19px;
+    margin-top: -22px;
+    margin-bottom: 3px;
+    font-weight: bold; 
+}
+
+.pay-bills p{
+     font-size: 14px;
+     color: #555;
+}
+
+
+.price-arrow{
+    img{
+        height: 30px;
+        width: 50px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+    }
+    padding-left: 10px;
+}
+
+
+.login-btn {
+    width: 100%;
+    height: 41px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 23px;
+    background: #2611bd;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.footer h2 {
+       font-size: 20px;
+       margin-top: 3px;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer p{
+    font-size: 12px;
+    color: #555;
+}
+
+
+.footer-image{
+    img{
+        height: 30px;
+        justify-content: center;
+        margin-left: 100px;
+        margin-top: 5px;
+    }
+}
+
+
+.back {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.login-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-heading h1 {
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+
+.login-heading p {
+    font-size: 12px;
+    color: #777;
+    line-height: 14px;
+}
+
+
+.ps-logo {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    background: #2412bd;
+    border: 4px solid #f5a000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ps-logo span {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.another-account {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 13px;
+}
+
+
+.password-input {
+    width: 100%;
+    height: 43px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    gap: 10px;
+    color: #333;
+}
+
+.password-input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    min-width: 0;
+}
+
+.password-input input::placeholder {
+    color: #aaa;
+}
+
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 13px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.remember input {
+    width: 15px;
+    height: 15px;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 13px;
+}
+
+.login-links button {
+    background: #2814c2;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 7px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.download-box {
+    height: 70px;
+    margin: 25px;
+    border: 2px solid #f6a000;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.download-icon {
+    font-size: 31px;
+    color: #126bc4;
+}
+
+.download-box strong {
+    display: block;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.download-box small {
+    display: block;
+    font-size: 7px;
+    font-style: italic;
+}
+
+.download-box b {
+    display: block;
+    color: #f28c00;
+    font-size: 16px;
+}
+
+.bottom-nav{
+    color: #2611bd;
+    text-align: center;
+    gap: 5px;
+    align-items: center;
+    margin-top: -40px;
+}
+
+
+/* ================= DASHBOARD ================= */
+
+.dashboard {
+    background: #fafafa;
+}
+
+.wallet-header {
+    background: linear-gradient(
+        to bottom,
+        #00d51a 0%,
+        #00bd16 40%,
+        #011907 100%
+
+    );
+    margin: 10px;
+    height: 200px;
+    border-radius: 0 0 28px 28px;
+    padding: 8px 10px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.profile-image {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #222;
+}
+
+
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.greeting {
+    flex: 1;
+}
+
+.greeting span {
+    display: block;
+    font-size: 14px;
+}
+
+.greeting strong {
+    display: block;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.notification {
+    font-size: 25px;
+    margin-right: 4px;
+}
+
+.wallet-header h2 {
+    text-align: center;
+    color: #000;
+    font-size: 25px;
+    margin-top: 2px;
+}
+
+.balance {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 4px;
+    color: #000;
+}
+
+.balance i {
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+.commission {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    gap: 8px;
+}
+
+.header-buttons button {
+    flex: 1;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    height: 26px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 14px 9px 8px;
+}
+
+.service-card {
+    height: 61px;
+    background: white;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        0 2px 7px rgba(0, 0, 0, 0.20),
+        inset 0 0 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: -2px;
+    position: relative;
+}
+
+.service-icon {
+    width: 23px;
+    height: 23px;
+    background: #00b82b;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.service-icon i {
+    font-size: 12px;
+}
+
+.service-card span,
+.service-card strong {
+    font-size: 9px;
+    color: #111;
+}
+
+.service-card strong {
+    font-size: 14px;
+}
+
+
+/* ================= IMAGE ROW ================= */
+
+.image-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+
+.image-card {
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+/* ================= BOTTOM NAV ================= */
+
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #eee;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-weight: bold;
+    color: #0a0a0a;
+}
+
+.nav-item i {
+    color: #00b82b;
+    font-size: 18px;
+    margin-bottom: 1px;
+}
+
+
+
+.data-heading{
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.network-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.network-card {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.network-card img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.network-card p {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.number{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.number-input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding: 0,12px;
+    display: flex;
+    align-items: center;
+    color: #777;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+
+.number-input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    min-width: 0;
+    text-align: center;
+}
+
+
+
+.beneficiary{
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.beneficiary img{
+    height: 30px;
+}
+
+.data-btn{
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .app {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    max-height: 580px;
+}
+
+.screen {
+    width: 100%;
+    min-height: 100vh;
+    height: 580px;
+    display: block;
+    padding: 0;
+}
+
+}
+    
+
+@media (max-width: 650px) {
+
+    body {
+        display: inline-block;
+    }
+
+    .app-container {
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+        gap: 10px;
+        flex-direction: column;
+        justify-self: center;
+        height: 580px;
+    }
+
+    .phone {
+        width: 100%;
+        max-width: 270px;
+        height: 580px;
+        gap: 15px;
+    }
+
+    .ps-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .ps-logo span {
+        font-size: 36px;
+    }
+
+    .login-heading h1 {
+        font-size: 25px;
+    }
+
+    .another-account {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .download-box {
+        margin-top:25px;
+    }
+
+}
+
